@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/profile.jpg";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -10,46 +10,65 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LAISSEZ-MOI ME <span className="purple"> PRÉSENTER </span>
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              Je suis un passionné d'Intelligence Artificielle et de Big Data, 
+              transformant les données en solutions innovantes qui façonnent l'avenir. 
+              Certifié Oracle Cloud en IA, je combine expertise technique et vision stratégique.
               <br />
               <br />
-              I’m proficient in
+              Je maîtrise les technologies de pointe en{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Data Science, Machine Learning, et Analyse de Données
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
-              <br />
-              <br />
-              My key areas of interest include developing
+              , avec une expertise particulière en{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Python, TensorFlow, et Systèmes Distribués
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              .
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              Mon parcours unique combine{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple">
+                  théorie et pratique
+                </b>
               </i>
+              , de la conception d'algorithmes complexes à leur déploiement en production. 
+              J'ai notamment développé des solutions qui ont permis une{" "}
+              <b className="purple">réduction de 15% des coûts logistiques</b> et une{" "}
+              <b className="purple">détection d'anomalies avec 92% de précision</b>.
+              <br />
+              <br />
+              Ma vision ? Utiliser l'IA pour{" "}
+              <i>
+                <b className="purple">
+                  résoudre des défis concrets
+                </b>
+              </i>
+              , qu'il s'agisse d'optimiser des processus industriels, de lutter contre le 
+              gaspillage alimentaire ou d'améliorer l'efficacité énergétique. Je suis 
+              constamment à la recherche de nouveaux défis où l'IA peut faire la différence.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img 
+                src={myImg} 
+                className="img-fluid" 
+                alt="avatar" 
+                style={{
+                  borderRadius: "50%",
+                  border: "2px solid #623686",
+                  maxWidth: "300px",
+                  boxShadow: "0 0 20px rgba(98, 54, 134, 0.5)"
+                }}
+              />
             </Tilt>
           </Col>
         </Row>

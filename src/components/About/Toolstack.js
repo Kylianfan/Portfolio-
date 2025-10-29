@@ -1,29 +1,40 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
-import chrome from "../../Assets/TechIcons/Google Chrome.svg";
-import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+import { 
+  SiJupyter,
+  SiAnaconda,
+  SiPowerbi,
+  SiTableau,
+  SiDocker,
+  SiGit
+} from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={macOs} alt="macOs" className="tech-icon-images" />
-        <div className="tech-icons-text">Mac Os</div>
+        <SiJupyter style={{ fontSize: "3.5em" }} />
+        <div className="tech-icons-text">Jupyter</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAnaconda style={{ fontSize: "3.5em" }} />
+        <div className="tech-icons-text">Anaconda</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={vsCode} alt="vsCode" className="tech-icon-images" />
-        <div className="tech-icons-text">Vs Code</div>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPowerbi style={{ fontSize: "3.5em" }} />
+        <div className="tech-icons-text">Power BI</div>
       </Col>
-
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTableau style={{ fontSize: "3.5em" }} />
+        <div className="tech-icons-text">Tableau</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker style={{ fontSize: "3.5em" }} />
+        <div className="tech-icons-text">Docker</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGit style={{ fontSize: "3.5em" }} />
+        <div className="tech-icons-text">Git</div>
       </Col>
     </Row>
   );
